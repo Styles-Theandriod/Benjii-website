@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url(/assets/css/loader.css);
+
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+    /* background-color:rebeccapurple; color name */
+    /* background-color: rgb(30, 20, 50) rgb colors ; */
+    /* background-color: rgba(255, 28, 126, 0.601); rgba colors  */
+    /* background-color: #ffcdbc; hexa-decimal colors  */
+    /* background-color: hsl(50, 50%, 50%) hsl colors; */
+    background-color: hsla(58, 81%, 54%, 0.49);
+}
+
+.navigation{
+    /* background-color: blue; */
+    display: flex;
+    justify-content:space-around;
+    /* align-items:center; */
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+
+.nav_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav_menu a:hover{
+    color:red;
+}
+
+.demo_buttons a:hover{
+    color: red;
+}
+
+.logo{
+    font-size:50px;
+    color:red;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+}
+
+.demo_buttons{
+    /* background-color: green; */
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.container{
+    /* background: blue; */
+    height:410px;
+    margin-top:20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+
+.box1{
+    /* background-color: peru; */
+    width: 40%;
+    height:400px;
+}
+
+.box1 h1 {
+    /* background-color:red; */
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#302357;
+}
+
+.box1 p{
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.but{
+    padding:5px;
+}
+
+.change::after{
+    content:' ';
+    position: absolute;
+    animation:mychange 9s infinite;
+}
+
+@keyframes mychange{
+    0%{
+        content: ' Developer';
+    }
+
+    50%{
+        content: ' Designer';
+    }
+
+    100%{
+        content: ' Lover';
+    }
+}
+
+
+.pricing{
+    /* border: 30px solid #31a8fe; */
+    background-color: red;
+    /* text-align: center; */
+    /* line-height: 1.33em; */
+    font-weight: 500;
+    /* letter-spacing: .5px; */
+    /* margin: auto; */
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:5px;
+}
+
+.box2{
+    /* background-color:plum; */
+    background-image: url(./images/atoms.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:400px;
+    width: 50%;
+
+}
+
+.fire{
+    /* background:#302357; */
+    width:100%;
+    height:200px;
+    background-image: url(./images/hi-hello.gif );
+    background-size:cover;
+}
+
+.unlimited:hover{
+    background-image: url(./images/4de7d62f50fed7a598670b3e8803d34f_w200.gif);
+}
+
+
+.section{
+    background: blue;
+    height:200px;
+    
+}
